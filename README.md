@@ -25,3 +25,7 @@ https://plnkr.co/W6akBXiJlOdns6KniIVZ
 Once the page loads, select "Launch Full Screen" on top of the preview window to display the module more clearly
 
 To view the source code, on the page linked above, select "Launch in Editor".
+
+In the editor view, you can access the JSON file to add your own values
+
+Preview the changes by selecting the eye icon on the top right hand corner of the page
