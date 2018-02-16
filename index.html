@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="newsApp">
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script data-require="angular.js@1.6.6" data-semver="1.6.6" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-controller="MainController">
+    <div class="container">
+        <div class="pageHeading">
+            <h1>
+                LATEST NEWS
+            </h1>
+        </div>
+        <div class="content">
+            <div class="pSport">
+                <h3 class="greenText">MOST POPULAR SPORT NEWS</h3>
+                <table class="table">
+                  
+                    <!-- Angular allows us to use directives such as ng-repeat to repeat a set of HTML based on the amount of items in a collection 
+                    orderBy enables us to order the values based on the name we want to order the values by in the JSON file. 
+                    Note how the JSON is unordered and with a simple directive, we can order the data-->
+                    
+                    <tr ng-repeat="objx in sports | orderBy:'position'">
+                      
+                    <!-- Here we are repeating based on the amount of items in the Breaking array in the 
+                    JSON file which we captured in the script.js file.
+                    We also choose what we want from the JSON file by indicating the name that stores the value. Note that we do not have 
+                    to repeat any html due to Angular already doing it for us. This is the same for sports -->
+
+                        <th scope: "row" class="popularity">{{objx.position}}.</th>
+                        <td>{{objx.title}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
