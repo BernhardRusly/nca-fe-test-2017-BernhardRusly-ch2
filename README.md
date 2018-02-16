@@ -20,7 +20,7 @@ Instructions:
 
 Select the following link to access the live version of this module
 
-https://plnkr.co/W6akBXiJlOdns6KniIVZ
+https://plnkr.co/jaH10YX5IvrHust4ggxx
 
 Once the page loads, select "Launch Full Screen" on top of the preview window to display the module more clearly
 

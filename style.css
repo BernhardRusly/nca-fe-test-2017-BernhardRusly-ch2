@@ -1,7 +1,7 @@
 .pSport
 {
     display: inline-block;
-    margin-left: 5rem;
+    width: 100%;
 }
 .bNews
 {
@@ -33,7 +33,7 @@
 }
 .hyperlink
 {
-    color: blue;
+    color: #0373b3;
 }
 .timestamp
 {
@@ -51,8 +51,6 @@
 
 .table
 {
-    max-width: 500px;
-    width:500px;
     overflow: hidden;
 }
 
